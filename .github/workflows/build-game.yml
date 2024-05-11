@@ -1,7 +1,6 @@
 name: Build and Upload nightly game builds
-
-on:
-  workflow_dispatch:
+runs-on: self-hosted
+on: workflow_dispatch:
   push:
     paths-ignore:
     - '**/Dockerfile'
@@ -127,4 +126,4 @@ jobs:
       with:
         butler-key: ${{ secrets.BUTLER_API_KEY}}
         target: ${{ matrix.target }}
-runs-on: self-hosted
+
