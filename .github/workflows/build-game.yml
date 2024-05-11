@@ -127,3 +127,4 @@ jobs:
       with:
         butler-key: ${{ secrets.BUTLER_API_KEY}}
         target: ${{ matrix.target }}
+runs-on: self-hosted
