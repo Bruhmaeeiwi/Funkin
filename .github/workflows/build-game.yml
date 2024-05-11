@@ -1,6 +1,6 @@
 name: Build and Upload nightly game builds
 runs-on: self-hosted
-on: workflow_dispatch:
+on: workflow_dispatch
   push:
     paths-ignore:
     - '**/Dockerfile'
