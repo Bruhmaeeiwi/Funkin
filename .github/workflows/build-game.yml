@@ -15,8 +15,7 @@ jobs:
         include:
         - target: windows
         - target: macos
-runs-on: self-hosted
-    - ${{ matrix.target }}
+    runs-on: self-hosted
     defaults:
       run:
         shell: bash
